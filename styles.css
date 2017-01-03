@@ -1,9 +1,16 @@
 body {
 	background-color: white;
+	font-size: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
 #NAVIGATION {
-	position: fixed;
+	position: absolute;
 	text-align: center;
 	background-color: black;
 	width: 100%;
@@ -11,11 +18,70 @@ body {
 	right: 0px;
 	left: 0px;
 	color: white;
+	font-family: Arial;
 }
 
-td a:hover {
+nav ul li {
+	text-align: center;
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav ul li:hover {
 	background-color: white;
 	color: black;
+}
+
+#MainContent {
+	background-color: red;
+	margin-top: 100px;
+	max-width: 500px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 15px;
+	border-width: 0px;
+
+}
+
+#BlogInfo {
+	background-color: blue;
+	margin-top: 100px;
+	margin-left: 100px;
+	max-width: 500px;
+	display: inline-block;
+	vertical-align: top;
+	font-family: monospace;
+}
+
+#Submission {
+	background-color: pink;
+	display: inline-block;
+	margin-top: 100px;
+	max-width: 300px;
+	margin-left: 100px;
+	vertical-align: top;
+	border-radius: 15px;
+	border-width: 0px;
+}
+
+#Comparison {
+	background-color: yellow;
+	text-align: center;
+	font-family: Century;
+}
+
+#SideBar {
+	background-color: green;
+	float: right;
+	position: fixed;
+	margin-top: 100px;
+	height: 100px;
+	width: 100px;
+}
+
+.IndexContent {
+	background: url(http://wallpapercave.com/wp/2FwK691.jpg);
+	color: white;
 }
 
 h2 {
@@ -27,7 +93,8 @@ ol li {
 	font-size: 1em;
 }
 
-p {
-	display: inline-block;
-	content: 5px 5px 5px 5px;
+@media screen and (max-width: 500px) {
+  body {
+    background-color: green;
+  }
 }
