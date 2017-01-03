@@ -3,7 +3,7 @@ body {
 	font-size: 100%;
 }
 
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     body {
         background-color: lightblue;
     }
@@ -68,6 +68,10 @@ nav ul li:hover {
 	background-color: yellow;
 	text-align: center;
 	font-family: Century;
+	padding: 5px;
+	margin: 10px;
+	border: 15px;
+	border-radius: 20px;
 }
 
 #SideBar {
